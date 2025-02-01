@@ -73,7 +73,7 @@ def upload_file():
 @app.route('/database',methods=['GET'])
 def get_data():
     # results=access_database()
-    return jsonify({"message":"results","status":"Successful"})
+    return jsonify({"message":"results","status":"Success"})
 if __name__=="__main__":
     app.run(debug=True,host='0.0.0.0',port='8000')
     
