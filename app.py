@@ -75,5 +75,5 @@ def get_data():
     # results=access_database()
     return jsonify({"message":"results","status":"Successful"})
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run(debug=True,host='0.0.0.0',port='8000')
     
