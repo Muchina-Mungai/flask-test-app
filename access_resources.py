@@ -58,9 +58,13 @@ def access_database():
         data_cursor.execute("SHOW TABLES")
         for x in data_cursor:
             print(x)
-        cnx.close()
+        return "Returned from database"
     except Exception as e:
         print(e)
+    finally:
+        cnx.close()
+        return "Ambiguous"
+    
    
     
     
